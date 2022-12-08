@@ -1,4 +1,11 @@
-variable "common_tags" {
-  description = "This is to help you add tags to your cloud objects"
-  type        = map(any)
+
+
+variable "is_http_allowed" {
+  type    = bool
+  default = false
+}
+
+variable "is_https_allowed" {
+  type    = bool
+  default = true
 }

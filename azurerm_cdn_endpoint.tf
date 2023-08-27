@@ -17,22 +17,18 @@ resource "azurerm_cdn_endpoint" "pike" {
     }
   }
 }
-
 variable "cdn" {
   type = map(any)
 }
-
 variable "content_types_to_compress" {
   type = list(string)
 }
-
 variable "origins" {
   type = list(object({
     name      = string
     host_name = string
   }))
 }
-
 variable "rg_name" {
   type = string
 }
